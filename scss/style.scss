@@ -1,0 +1,158 @@
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+	> .content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.mouse-enter {
+	box-shadow: none;
+}
+
+body {
+	margin: 0 auto;
+	background-attachment: fixed;
+	font-family: arvo;
+	font-size: 20px;
+	text-align: center;
+	h1 {
+		top: 8%;
+		position: fixed;
+		margin: 15%;
+		font-size: 5vw;
+		color: white;
+		z-index: -1;
+	}
+	h2 {
+		padding-top: 30px;
+		margin-bottom: 50px;
+		font-size: 4vw;
+		border-bottom: 5px solid #69397B;
+		width: 75%;
+		margin-left: 12.5%;
+	}
+	#nav {
+		top: 0;
+		left: 0;
+		position: fixed;
+		display: flex;
+		background: #262423;
+		justify-content: flex-end;
+		box-shadow: 0 5px 20px black;
+		height: 30px;
+		width: 100%;
+		padding: 20px;
+		z-index: 3;
+		a {
+			color: white;
+			padding: 0 25px;
+			max-width: 50%;
+			margin-right: 50px;
+			text-decoration: none;
+		}
+		a:hover {
+			border-bottom: 4px solid #69397B;
+		}
+	}
+	#about {
+		margin-top: 60vw;
+		background: white;
+		top: 500px;
+		z-index: 3;
+		height: auto;
+		p {
+			font-size: 4vw;
+			margin: 0 15%;
+		}
+	}
+	#portfolio {
+		padding: 25px 0px 50px;
+		background: white;
+		z-index: 3;
+		.flex-container {
+			margin-left: 8%;
+			margin-right: 8%;
+			display: flex;
+			flex-wrap: wrap;
+			.flex-item {
+				box-shadow: 5px 8px 18px grey;
+				text-decoration: none;
+				transition: 0.3s;
+				flex-grow: 1;
+				flex-shrink: 1;
+				width: 300px;
+				margin: 15px;
+				padding: 0;
+				z-index: 1;
+				color: black;
+				img {
+					flex-grow: 1;
+					height: inherit;
+					width: 100%;
+				}
+			}
+		}
+	}
+	.flex-item:hover {
+		box-shadow: none;
+	}
+	#social {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 100%;
+		margin: 5%;
+		#btns {
+			padding: 65px 0 0;
+			//background: grey;
+			min-width: 350px;
+			flex-shrink: 1;
+			flex-direction: row;
+			a {
+				min-height: 25px;
+				background: white;
+				border: 2px solid black;
+				padding: 25px;
+				border-radius: 50%;
+				color: black;
+				font-family: share tech mono;
+			}
+			a:hover {
+				transition: 0.4s;
+				border: 2px solid #69397B;
+				color: white;
+				background: #69397B;
+			}
+		}
+		#contact {
+			//background: blue;
+			display: flex;
+			flex-flow: column, wrap;
+			padding-right: 10px;
+			font-size: 3.0vw;
+			text-align: left;
+			list-style-type: none;
+			p {
+				font-family: roboto;
+				flex-wrap: wrap;
+				padding: 0;
+			}
+		}
+	}
+	footer {
+		background: #262423;
+		color: white;
+		padding: 25px;
+		margin: 0 auto;
+	}
+}
