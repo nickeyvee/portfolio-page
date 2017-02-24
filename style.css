@@ -151,14 +151,10 @@ body footer {
   min-width: 400px;
   margin: auto;
 }
-.form .model .title {
-  font-size: 35px;
-  font-family: sans-serif;
-}
 .form .model .user-info {
+  font-size: 40px;
   padding-left: 15px;
   margin-left: 20px;
-  font-size: 4vw;
   outline: none;
   border-style: none;
   box-shadow: 3px 3px 15px grey;
@@ -167,11 +163,11 @@ body footer {
   min-width: 275px;
   margin: auto;
   font-family: sans-serif;
-  font-size: 4.5vw;
+  transition: 0.15s;
 }
 .form .model .message {
+  font-size: 40px;
   padding: 5px;
-  font-size: 4vw;
   outline: none;
   border-style: none;
   box-shadow: 3px 3px 15px grey;
@@ -179,5 +175,4 @@ body footer {
   min-height: 50px;
   min-width: 275px;
   font-family: sans-serif;
-  font-size: 4.5vw;
 }
