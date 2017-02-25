@@ -142,13 +142,24 @@ body footer {
 .form {
   list-style: none;
   margin-top: 75px;
+  padding-left: 0;
   margin: 0 auto;
 }
 .form #submit {
-  padding: 20px;
+  outline: none;
+  background: white;
+  transition: 0.4s;
+  padding: 15px 50px 15px 50px;
   font-size: 20px;
+  border-radius: 7px;
   border: 2px solid black;
   text-align: center;
+}
+.form #submit:hover {
+  transition: 0.4s;
+  border: 2px solid #69397B;
+  color: white;
+  background: #69397B;
 }
 .form .model {
   width: 100%;
