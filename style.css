@@ -1,7 +1,8 @@
+/* compiled css */
+
 .mouse-enter {
   box-shadow: none;
 }
-
 body {
   margin: 0 auto;
   background-attachment: fixed;
@@ -142,6 +143,12 @@ body footer {
   list-style: none;
   margin-top: 75px;
   margin: 0 auto;
+}
+.form #submit {
+  padding: 20px;
+  font-size: 20px;
+  border: 2px solid black;
+  text-align: center;
 }
 .form .model {
   width: 100%;
