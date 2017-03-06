@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./.vscode/gulpfile.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-sass": "~2.0.4"
+  }
+}
