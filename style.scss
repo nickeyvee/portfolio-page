@@ -24,6 +24,7 @@ body {
 	background-attachment: fixed;
 	font-family: arvo;
 	text-align: center;
+	
 	h1 {
 		top: 8%;
 		position: fixed;
@@ -40,7 +41,8 @@ body {
 		width: 75%;
 		margin-left: 12.5%;
 	}
-	#nav {
+
+	header {
 		top: 0;
 		left: 0;
 		position: fixed;
@@ -51,16 +53,72 @@ body {
 		height: 30px;
 		width: 100%;
 		padding: 20px;
-		z-index: 3;
-		a {
+		z-index: 100;
+		.fa-bars {
+			display: none;
+			float: right;
 			color: white;
-			padding: 0 25px;
-			max-width: 50%;
-			margin-right: 50px;
 			text-decoration: none;
 		}
-		a:hover {
-			border-bottom: 4px solid #69397B;
+		@media only screen and (max-width: 640px) {
+			#nav {
+				position: absolute;
+				padding: 20px;
+				.fa-bars {
+					display: inline-block;
+					position: absolute;
+					margin-bottom: 10px;
+					padding: 10px;
+					top: 0;
+					right: 50px;
+				}
+				.hidden {
+					display: none;
+				}
+				.active {
+					border: 2px solid white;
+					padding: 8px;
+					border-radius: 4px;
+				}
+				#menu {
+					padding: 0;
+					margin-top: 20px;
+					li {
+						background: grey;
+						height: 30px;
+    					margin: 0;
+						float: none;
+						&:hover {
+							background: #616161;
+						}
+						a {
+							padding-left: 100px;
+							padding-right: 100px;
+    						margin: 0;
+							&:hover {
+								border-bottom: none;
+							}
+						}
+						.hide {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		li {
+			float: left;
+			list-style: none;
+			a {
+				color: white;
+				padding: 0 25px;
+				max-width: 50%;
+				margin-right: 50px;
+				text-decoration: none;
+				&:hover {
+					border-bottom: 4px solid #69397B;
+				}
+		}
 		}
 	}
 	#about {
@@ -178,23 +236,23 @@ body {
 		}
 	.model {
 		width: 100%;
-		padding: 25px;
+		padding-bottom: 25px;
 		text-align: center;
-		width: 80%;
+		width: 60%;
+		max-width: 450px;
 		margin: auto;
 		.title {
-			font-size: 35px;
+			font-size: 25px;
 			font-family: sans-serif;
 		}
 		.user-info {
 			padding-left: 15px;
 			margin-left: 20px;
 			transition: 0.3s;
-			font-size: 4vw;
+			width: 100%;
 			outline: none;
 			border-style: none;
 			box-shadow: 3px 3px 15px grey;
-			height: 8vw;
 			min-height: 50px;
 			min-width: 275px;
 			margin: auto;
@@ -202,12 +260,12 @@ body {
 		}
 		.message {
 			padding: 5px;
-			font-size: 4vw;
 			transition: 0.3s;
+			width: 100%;
 			outline: none;
 			border-style: none;
 			box-shadow: 3px 3px 15px grey;
-			height: 20vw;
+			height: 10vw;
 			min-height: 50px;
 			min-width: 275px;
 			font-family: sans-serif;

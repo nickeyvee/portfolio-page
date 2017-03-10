@@ -3,17 +3,21 @@
 	<link href="https://fonts.googleapis.com/css?family=Arvo|Pacifico|Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="C:\Users\nvorr\OneDrive\Documents\GitHub\portfolio_page\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Share+Tech+Mono" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 	<script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src= "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.23.1/babel.min.js"></script>
 	<script type= "text/javascript" src= "scripts\animate.js"></script>
 	<script type= "text/javascript" src= "scripts\app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <header>
 	<div id="nav">
-		<a href="#about">About</a>
-		<a href="#portfolio">Portfolio</a>
-		<a href="#contact"> contact</a>
+		<a href= "#" class="fa fa-bars active" aria-hidden="true"></a>
+ 		<ul id= "menu">
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact"> contact</a></li>
+		</ul>
 	</div>
 </header>
 
@@ -54,8 +58,8 @@
 				<h3>Quote Generator</h3>
 			</a>
 		</div>
-		<h2>Get In Touch</h2>
-		<ul id="contact" class="form">
+		<h2 id="contact">Get In Touch</h2>
+		<ul  class="form">
 			<li id="name" class="model">
 				<input class="user-info" placeholder="first name">
 			</li>
