@@ -52,6 +52,7 @@ body {
         body header #nav .hidden {
           display: none; }
         body header #nav .active {
+          background: #5d5956;
           border: 2px solid white;
           padding: 8px;
           border-radius: 4px; }
@@ -59,7 +60,7 @@ body {
           padding: 0;
           margin-top: 20px; }
           body header #nav #menu li {
-            background: grey;
+            background: #5d5956;
             display: block;
             margin: 0;
             float: none; }
@@ -80,7 +81,7 @@ body {
       list-style: none; }
       body header li a {
         color: white;
-        padding: 0 25px;
+        padding-right: 50px;
         text-decoration: none; }
         body header li a:hover {
           border-bottom: 4px solid #69397B; }
