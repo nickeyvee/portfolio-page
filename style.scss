@@ -89,6 +89,7 @@ body {
 					li {
 						background: #5d5956;
 						display: block;
+						padding-right: 0;
     					margin: 0;
 						float: none;
 						&:hover {
@@ -114,9 +115,9 @@ body {
 		li {
 			float: left;
 			list-style: none;
+			padding-right: 50px;
 			a {
 				color: white;
-				padding-right: 50px;
 				text-decoration: none;
 				&:hover {
 					border-bottom: 4px solid #69397B;
