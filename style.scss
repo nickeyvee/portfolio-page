@@ -14,13 +14,18 @@
 		bottom: 0;
 	}
 }
-.active {
-	display: none;
+.red{
+	color: indianred;
+}
+.avoid-clicks {
+	color: darkslategrey;
+	background: indianred;
+	border: 2px solid indianred;
+	pointer-events: none;
 }
 .mouse-enter {
 	box-shadow: none;
 }
-
 body {
 	margin: 0 auto;
 	background-attachment: fixed;
@@ -229,12 +234,10 @@ body {
 	}
 	#submit {
 			outline: none;
-			background: white;
 			transition: 0.4s;
 			padding: 15px 50px 15px 50px;
 			font-size: 20px;
 			border-radius: 7px;
-			border: 2px solid black;
 			text-align: center;
 			margin-top: 15px;
 			&:hover {
@@ -243,6 +246,10 @@ body {
 				color: white;
 				background: #69397B;
 			}
+		}
+	.enabled {
+		background: white;
+		border: 2px solid black;
 		}
 	.model {
 		width: 100%;

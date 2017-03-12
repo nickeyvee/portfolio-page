@@ -6,7 +6,7 @@
 	<script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src= "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.23.1/babel.min.js"></script>
 	<script type= "text/javascript" src= "scripts\animate.js"></script>
-	<script type= "text/javascript" src= "scripts\knockout.js"></script>
+	<script type= "text/javascript" src= "scripts\state.js"></script>
 	<script type= "text/javascript" src= "scripts\app.js"></script>
 	<script src="https://use.fontawesome.com/8006207a66.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -71,11 +71,11 @@
 				<input class="user-info" placeholder="phone number">
 			</li>
 			<li id= "message" class="model">
-				<textarea id="textarea" class="message user-info" onkeypress="countLength()" placeholder=" message" cols="24"></textarea>
+				<textarea id="textarea" class="message user-info" placeholder=" message" cols="24"></textarea>
 			</li>
 			<li><span id="char-counter">140</span></li>
 
-			<button id= "submit"> submit </button>
+			<button id= "submit" class="enabled" > submit </button>
 		</ul>
 		<div id="social">
 			<div id="btns">

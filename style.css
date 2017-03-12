@@ -1,5 +1,11 @@
-.active {
-  display: none; }
+.red {
+  color: indianred; }
+
+.avoid-clicks {
+  color: darkslategrey;
+  background: indianred;
+  border: 2px solid indianred;
+  pointer-events: none; }
 
 .mouse-enter {
   box-shadow: none; }
@@ -174,12 +180,10 @@ body {
     display: none; }
   .form #submit {
     outline: none;
-    background: white;
     transition: 0.4s;
     padding: 15px 50px 15px 50px;
     font-size: 20px;
     border-radius: 7px;
-    border: 2px solid black;
     text-align: center;
     margin-top: 15px; }
     .form #submit:hover {
@@ -187,6 +191,9 @@ body {
       border: 2px solid #69397B;
       color: white;
       background: #69397B; }
+  .form .enabled {
+    background: white;
+    border: 2px solid black; }
   .form .model {
     width: 100%;
     padding-bottom: 25px;
