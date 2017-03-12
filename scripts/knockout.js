@@ -1,15 +1,28 @@
+/*
+$(document).ready( () => {
+
+    $("#textarea").click( () => {
+        console.log( 'clicked ! ! !')
+        $("#char-counter").show();
+    })
+});
+*/
+
 const maxlength = 140;
-const element = function(id) {
-	return document.getElementById(id);
-};
+const element = (id) => { return document.getElementById(id) };
 
 const countLength = () => {
     let msgLength = element("textarea").value.length;
     let charCounter = element( "char-counter");
     let crrLength = parseInt( maxlength - msgLength );
 
-    $(charCounter).keyup( (e) => { 
-        console.log( e.keyup );
+    //console.log( msgLength );
+
+    // show char-counter after input.
+    msgLength >= 0 ? $(charCounter).show() : $(charCounter).hide();
+    
+    $(element("textarea")).keyup( (event) => { 
+        console.log( event.keycode );
     });
     //console.log( crrLength, e.keypress );
 

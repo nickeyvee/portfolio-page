@@ -14,7 +14,9 @@
 		bottom: 0;
 	}
 }
-
+.active {
+	display: none;
+}
 .mouse-enter {
 	box-shadow: none;
 }
@@ -222,6 +224,9 @@ body {
 	list-style: none;
 	margin-top: 75px;
 	margin: 0 auto;
+	#char-counter {
+		display: none;
+	}
 	#submit {
 			outline: none;
 			background: white;
@@ -231,6 +236,7 @@ body {
 			border-radius: 7px;
 			border: 2px solid black;
 			text-align: center;
+			margin-top: 15px;
 			&:hover {
 				transition: 0.4s;
 				border: 2px solid #69397B;
