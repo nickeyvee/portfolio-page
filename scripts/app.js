@@ -4,14 +4,26 @@ $(document).ready( () => {
     $('#char-counter').hide();
     $('#menu').addClass('hidden');
 
-    $('.user-info').keyup( (event) => { 
-        if (event.keyCode === 13) {
-             console.log('pressed enter!')
-        }
-    })
+const request = $.ajax({
+    url: "server.js",
+    dataType: 'jsonp',
+    type: 'POST',
+    data:{ message : $("#textarea").value },
+    dataType: 'html'
+});
 
-    $('.fa-bars').click( ()=> {
+$("#submit").click( () => { 
+    console.log( typeof request );
+    request();
+    request.done( ()=> {
+        console.log( 'Request sent!')
+    })
+    // where webform data will be packaged and sent to the server.
+});
+
+
+    $('.fa-bars').click( () => {
         $('.fa-bars').toggleClass('active');
         $('#menu').toggleClass('hidden');
-    })
+    }) 
 });
